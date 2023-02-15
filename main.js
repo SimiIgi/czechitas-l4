@@ -10,7 +10,7 @@ const adresa = {
 }
 */
 
-const address = {
+/* const address = {
   streetName: 'Pod Kaštany',
   number: 31,
   city: 'Horní Dlouhonosy',
@@ -40,5 +40,26 @@ const product = {
   currency: 'Kč'
 }
 
-const {name, price, currency} = product
+const {name, price, currency} = product */
+
+/* ÚLOHA Č.1 */
+
+const title = "Harry Potter"
+title.length
+title.toUpperCase()
+title.slice(0, 5)
+title.slice(title.length - 5, title.length)
+
+
+/* ÚLOHA Č. 2 */
+
+const email = prompt('Zadajte Váš email:')
+const atIndex = email.indexOf('@')
+const parsedEmail = {
+	userName: email.slice(0, atIndex),
+	domain: email.slice(atIndex + 1),
+}
+
+document.body.innerHTML = '<p>Užívateľské meno: ' + parsedEmail.userName + '</p>'
+document.body.innerHTML += '<p>Doména: ' + parsedEmail.domain + '</p>'
 
